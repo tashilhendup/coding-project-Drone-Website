@@ -1,0 +1,36 @@
+.card{
+    width: 100%;
+    box-shadow:  0 0 15px black;
+    text-align: center;
+    height: 250px;
+}
+.drones{
+    text-align: center;
+    padding: 5px;
+}
+.row {
+    padding: 10px;
+}
+
+/* media query */
+@media (max-width:600px) {
+    
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    #footerDiv{
+        display: flex;
+        height: 170px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footerDiv > p,li{
+        display: none;
+    }
+    .footerDiv h3{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

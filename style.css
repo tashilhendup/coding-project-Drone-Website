@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dosis:wght@200&family=Fuggles&family=Inclusive+Sans&family=Lobster+Two&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Playfair+Display:wght@500&family=Roboto:wght@100&family=Work+Sans&family=Zeyada&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container-fluid{
+    background-color: #528598;
+}
+
+#logo {
+    width: 20%;
+    margin-top: 15px;
+}
+
+
+
+
+/* body */
+.body{
+    height: 86vh;
+    background-image: url("/image/homeb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heading{
+    background: rgba(0,0,0,0.2);
+    padding: 5px;
+    width: 100%;
+}
+
+.body{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 4px 8px 1px black;  
+}
+
+.body h1{
+    font-size: 40px;
+}
+
+#text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+#btn{
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    background: transparent;
+    color: #ffffff;
+    text-transform: uppercase; 
+    border: 1px solid white;
+}
+
+#btn:hover{
+    background-color: #DE8F5F;
+}
+
+
+
+
+.section-margin{
+	padding: 10px;
+}
+
+.section-heading h1{
+	font-size: 40px;
+	color: black;
+	text-align:center;
+}
+.section-heading{
+    background-color: #528598;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.services{
+	display:flex;
+    margin-top: 30px;
+    justify-content: space-around;
+	width:100%; 
+	text-align:center;
+    height: 79vh;
+}
+
+.card{
+	background:whitesmoke;
+	margin: 10px;
+	width:25%;
+	border-radius: 25px; 	
+	height: 320px;
+    padding-bottom: 20px;
+    box-shadow:  0 0 15px black;
+}
+.card img{
+	border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    height: 200px;
+    width: 100%;
+}
+
+.card p{
+	color:green;
+	font-size:28px;
+}
+
+.card p .arr-card{
+	color:blue;
+}
+
+.theme-btn button{
+	background-color:#005207;
+	width: 130px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+	border-radius:20px;
+}
+
+.card .theme-btn a{
+	position: relative;
+	top:7px;
+	text-decoration:none;
+	font-size:20px;
+	color:#fff;
+}
+
+.services{
+    text-align: center;
+}
+/* body2 */
+.d-block {
+    width: 100%;
+    height: 100vh;
+}
+/* body3 */
+.iconmain{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(232, 227, 227);
+    margin-bottom: 10px;
+    box-shadow:  0 0 15px black;
+}
+.icon{
+    width: 30%;
+    text-align: center;
+}
+
+.fa-cart-shopping, .fa-headphones-simple, .fa-plane-departure{
+    font-size: 40px;
+    color: gray;
+}
+.icon button{
+    border: transparent;
+    background: transparent;
+
+}
+
+
+/* footer */
+#footerDiv{
+    display: flex;
+    justify-content: space-around;
+    background-color: #528598;
+    color: #ffffff;
+    align-items: center;
+    cursor:default;
+}
+
+.footerDiv{
+    width: 30%;
+}
+
+.footerDiv p{
+    font-size: 13.5px;
+}
+
+.footerDiv ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    /* text-align: center; */
+}
+#fot{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+/* media query */
+@media (max-width:600px) {
+    .body{
+        width: 100%;
+        padding: 10px;
+        height: 50vh;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        height: auto;
+        padding: 10px;
+    }
+    .card{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+    }
+    .card button{
+        margin-bottom: 20px;
+    }
+    .carousel-inner{
+        height: 300px;
+        padding: 10px;
+    }
+    .d-block{
+        height: 300px;
+    }
+    .iconmain{
+        display: flex;
+        flex-direction: column;
+        height: 355px;
+        padding: 10px;
+    }
+    .icon{
+        width: 100%;
+        padding: 10px;
+    }
+    #footerDiv{
+        display: flex;
+        height: 170px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footerDiv > p,li{
+        display: none;
+    }
+    .footerDiv > .whoare{
+        position: relative;
+        bottom: 4px;
+    }
+    .footerDiv h3{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
